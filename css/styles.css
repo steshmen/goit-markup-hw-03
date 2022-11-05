@@ -161,10 +161,12 @@ address {
 .about {
     background-color: var(--primary-bg-color);
 }
+.about-title {
+    display: none;
+}
 .about-list {
     display: flex;
     margin-left: -30px;
-    margin-bottom: 94px;
 }
 .about-list-item {
     flex-basis: calc((100% - 90px) / 4);
@@ -180,9 +182,13 @@ address {
     color: var(--secondary-txt-color);
     line-height: 2;
 }
-.about .sec-title {
+.work.section {
+    padding-top: 0;
+}
+.work .sec-title {
     margin-bottom: 50px;
 }
+
 .work-list {
     display: flex;
     justify-content: space-between;
@@ -297,7 +303,7 @@ address {
     color: var(--primary-bg-color);
     line-height: 1.71;
 }
-.foot-list-link:hover, .foot-list-link:focus {
+.foot-link-col {
     color: var(--link-accent-color);
 }
 .foot-list-item:not(:last-child) {
